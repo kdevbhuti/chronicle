@@ -13,9 +13,7 @@ const SearchItem = ({bookDetails}) =>{
                 <span>Auther: {bookDetails.auther}</span>
                 <span>Publiser: {bookDetails.Publisher}</span>
             </div>
-            
             <p>{bookDetails.description}</p>
-           
         </div>
     )
 }

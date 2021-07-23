@@ -16,23 +16,23 @@ const SearchBoxList = ({
             {
                 bookLists.map((item, index) => {
                     return bookLists.length-1 > index ? 
-                        (
-                            <div 
-                                className="searboxlistItems"  
-                                key={item.bookId}
-                                onClick={()=>handleOnSelectBook(item.bookId)}
-                            >
-                                {item.title}
-                            </div>
-                        ):(
-                            <div 
-                                className="borderNon"
-                                key={item.bookId} 
-                                onClick={()=>handleOnSelectBook(item.bookId)}
-                            >
-                                {item.title}
-                            </div>
-                        )
+                    (
+                        <div 
+                            className="searboxlistItems"  
+                            key={item.bookId}
+                            onClick={()=>handleOnSelectBook(item.bookId)}
+                        >
+                            {item.title}
+                        </div>
+                    ):(
+                        <div 
+                            className="borderNon"
+                            key={item.bookId} 
+                            onClick={()=>handleOnSelectBook(item.bookId)}
+                        >
+                            {item.title}
+                        </div>
+                    )
                 })
             }
         </div>

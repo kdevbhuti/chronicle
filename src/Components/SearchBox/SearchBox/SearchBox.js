@@ -24,7 +24,7 @@ const SearchBox = (props) => {
                     ref={booNameRef}
                     placeholder="Enter Book Name"
                 />
-                <button className="searchBtn" onClick={handleBookSearch}>Search</button>
+                <button data-testid="submitBtn" className="searchBtn" onClick={handleBookSearch}>Search</button>
             </div>
             <Popup trigger={searchBoxListPopup} heading={"Select Book"} setTrigger={setSearchBoxListPopup}>
                 <SearchBoxList 

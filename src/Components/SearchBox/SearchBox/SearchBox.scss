@@ -1,0 +1,28 @@
+.searchBox{
+    .inputSearch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        .searchInputBox{
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1.5px solid gray;
+            width: 20rem;
+            border-radius: 0.5rem;
+            outline: none;
+            &:focus{
+                border: 1.5px solid blue;
+            }
+        }
+        .searchBtn{
+            background-color: blue;
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+        }
+    }
+}

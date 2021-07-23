@@ -1,0 +1,15 @@
+.searboxlist{
+    .searboxlistItems{
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid gray;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .borderNon{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

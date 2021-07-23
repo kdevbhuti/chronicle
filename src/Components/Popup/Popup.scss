@@ -1,0 +1,22 @@
+.popup{
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    .popup-inner{
+        .poppu_heading{
+            text-align: left;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 1rem;
+            h2{
+                margin: 0rem;
+            }
+        }
+        .close-btn{
+            margin-left: 14rem;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.searboxlist .searboxlistItems {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+.searboxlist .searboxlistItems:hover {
+  cursor: pointer;
+}
+.searboxlist .borderNon:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=SearchBoxList.css.map */

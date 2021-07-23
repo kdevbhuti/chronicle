@@ -1,0 +1,27 @@
+.searchItem .bookDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 6rem repeat(3, 1fr);
+  align-items: center;
+  text-align: left;
+}
+.searchItem .bookDetails .bookTitle {
+  text-align: left;
+  margin: 0rem;
+  font-weight: bold;
+  color: blue;
+}
+.searchItem .bookDetails .bookImg {
+  grid-area: 1/1/span 4/span 1;
+  margin: 0rem;
+  object-fit: fill;
+  width: 10rem;
+  height: 15rem;
+  justify-self: center;
+}
+.searchItem .bookDetails .bookImg img {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=searchItem.css.map */

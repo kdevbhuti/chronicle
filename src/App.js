@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import SearchBox from "./Components/SearchBox/SearchBox/SearchBox"
+import bookData from "./BookDetailsData/BookDetails"
+import Popup from './Components/Popup/Popup';
+import SearchItem from './Components/SearchItem/SearchItem';
 
 function App() {
+const [searchItemPopup, setSearchItempopup] = React.useState(false);
+const [searchItemDetails, setSearchItemDetails] = React.useState({});
+const getBookDetails = (bookId) => {
+  const bookDetails = bookData.find(item => item.bookId === bookId);
+  setSearchItemDetails(bookDetails);
+  setSearchItempopup(true)
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBox 
+        bookDetails={bookData}
+        bookDetailsPopup={setSearchItempopup}
+        getBookDetails={getBookDetails}
+      />
+      <Popup trigger={searchItemPopup} heading={"Book Details"} setTrigger={setSearchItempopup}>
+        <SearchItem bookDetails={searchItemDetails}/>
+      </Popup>
     </div>
   );
 }
